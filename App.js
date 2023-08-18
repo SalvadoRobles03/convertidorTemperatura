@@ -11,8 +11,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Fahrenheit-Celsius</Text>
-      <TextInput style={styles.input} placeholder="Ingrese Fahrenheit" onChangeText={(text) => setFahren(text)}/>
-      <TouchableOpacity style={styles.button} onTouchEnd={FahrenheitToCelsius}>
+      <TextInput inputMode="numeric" style={styles.input} placeholder="Ingrese Fahrenheit" onChangeText={(text) => setFahren(text)}/>
+      <TouchableOpacity style={styles.button} onPress={FahrenheitToCelsius}>
         <Text style={styles.buttonText}>Convertir</Text>
       </TouchableOpacity>
       <Text style={styles.title}>{TempCelsius}</Text>
