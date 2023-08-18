@@ -1,0 +1,3 @@
+npm create-react-native-app
+npm i  
+          
